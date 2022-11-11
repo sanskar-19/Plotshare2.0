@@ -11,22 +11,39 @@
 body {
   background-color: #f4f3f8;
 }
-.navbar {
+.navbar-wrapper {
   background-color: #262161;
   color: #fff;
   /* max-height: ; */
+  width: 100%;
   padding: 1rem 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
   font-family: "inter";
   z-index: 100;
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .menu ul {
+  display: flex;
+}
+.navbar .menu li {
+  list-style: none;
+  font-family: "inter";
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .property-row {
@@ -254,4 +271,53 @@ body {
   display: flex;
   gap: 2rem;
   padding: 2rem 0;
+}
+
+.listings_heading {
+  font-weight: 500;
+  font-family: "Inter";
+  font-style: normal;
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.single-property-action-bar
+  .single-property-purchase-form
+  .single-property-heading
+  h2 {
+  font-weight: 500;
+  font-family: "Inter";
+  font-style: normal;
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.single-property-action-bar .single-property-purchase-form .field {
+  background-color: #f4f3f8;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.single-property-action-bar
+  .single-property-purchase-form
+  .field
+  input:placeholder {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.single-property-action-bar .single-property-purchase-form .field input {
+  background: none;
+}
+
+.single-property-action-bar .single-property-purchase-form .field label {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.single-property-action-bar .single-property-purchase-form .field select {
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  background: none;
 }

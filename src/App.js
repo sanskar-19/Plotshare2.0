@@ -10,7 +10,7 @@ function App() {
       <Navbar />
       <Router>
         <Routes>
-          <Route path="/properties" element={<Listings />} />
+          <Route path="/" element={<Listings />} />
           <Route path="/properties/:propertyid" element={<Single_Listing />} />
         </Routes>
       </Router>

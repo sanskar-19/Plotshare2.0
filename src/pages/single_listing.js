@@ -16,13 +16,25 @@ const Single_Listing = () => {
   const [property, setproperty] = useState();
   const [activeMenu, setactiveMenu] = useState(1);
   useEffect(() => {
-    fetch(config.get("GetProperties") + "/" + propertyid)
-      .then((response) => {
-        return response.json();
-      })
-      .then((response_json) => {
-        setproperty(response_json);
-      });
+    // fetch(config.get("GetProperties") + "/" + propertyid)
+    //   .then((response) => {
+    //     return response.json();
+    //   })
+    //   .then((response_json) => {
+    //     setproperty(response_json);
+    //   });
+
+    setproperty({
+      property_id: 1,
+      property_name: "abc",
+      property_cost: 100,
+      property_desc:
+        "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
+      property_total_units: 100,
+      property_cost_per_unit: 1,
+      property_min_tenure: "3 yrs",
+      property_units_sold: 64,
+    });
   }, []);
   return (
     <>
@@ -43,7 +55,34 @@ const Single_Listing = () => {
             {activeMenu === 7 && <Property_Details_Returns />}
             {activeMenu === 8 && <Property_Details_FAQs />}
           </div>
-          <div className="single-property-action-bar"></div>
+          <div className="single-property-action-bar">
+            <div className="single-property-purchase-form">
+              <div className="single-property-heading">
+                <h2>Buy</h2>
+              </div>
+              <div className="field">
+                <label htmlFor="prop_no_of_units">Select no. of units</label>
+                <select
+                  name="prop_no_of_units"
+                  id="prop_no_of_units"
+                  className="single-property-form-input"
+                >
+                  <option value="10">10</option>
+                  <option value="20">20</option>
+                  <option value="30">30</option>
+                  <option value="40">40</option>
+                </select>
+              </div>
+              <div className="field">
+                <input
+                  type="number"
+                  name="single-property-form-price"
+                  id="single-property-form-price"
+                  placeholder="Enter unit price"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
