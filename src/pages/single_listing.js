@@ -24,17 +24,7 @@ const Single_Listing = () => {
     //     setproperty(response_json);
     //   });
 
-    setproperty({
-      property_id: 1,
-      property_name: "abc",
-      property_cost: 100,
-      property_desc:
-        "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
-      property_total_units: 100,
-      property_cost_per_unit: 1,
-      property_min_tenure: "3 yrs",
-      property_units_sold: 64,
-    });
+    setproperty();
   }, []);
   return (
     <>
@@ -46,14 +36,157 @@ const Single_Listing = () => {
         />
         <div className="container single-property-wrapper">
           <div className="single-property-content-box">
-            {activeMenu === 1 && <Property_Details_Property_Features />}
-            {activeMenu === 2 && <Property_Details_Holders />}
+            {activeMenu === 1 && (
+              <Property_Details_Property_Features
+                property={{
+                  property_id: 1,
+                  property_name: "Winsdors farm land near ORR",
+                  property_location: "Outer ring road, Sarjapur, Bangalore",
+                  property_total_units: 100,
+                  property_total_area_plot: 10000,
+                  property_cost_per_unit: 1,
+                  property_min_tenure: "3 yrs",
+                  property_units_sold: 64,
+                  property_desc:
+                    "The newly constructed & platinum rated building is situated in the largest IT corridor of Bangalore. This is a rare opportunity to acquire an A+ grade asset with a blue chip tenant at an attractive. The newly constructed & platinum rated building is situated in the largest IT corridor of Bangalore. This is a rare opportunity to acquire an A+ grade asset with a blue chip tenant at an attractive",
+                  property_yield: "8%",
+                  property_last_bidding_date: "4th Oct' 22",
+                }}
+              />
+            )}
+            {activeMenu === 2 && (
+              <Property_Details_Property_Features
+                property={{
+                  property_id: 1,
+                  property_name: "Winsdors farm land near ORR",
+                  property_location: "Outer ring road, Sarjapur, Bangalore",
+                  property_total_units: 100,
+                  property_total_area_plot: 10000,
+                  property_cost_per_unit: 1,
+                  property_min_tenure: "3 yrs",
+                  property_units_sold: 64,
+                  property_desc:
+                    "The newly constructed & platinum rated building is situated in the largest IT corridor of Bangalore. This is a rare opportunity to acquire an A+ grade asset with a blue chip tenant at an attractive. The newly constructed & platinum rated building is situated in the largest IT corridor of Bangalore. This is a rare opportunity to acquire an A+ grade asset with a blue chip tenant at an attractive",
+                  property_yield: "8%",
+                  property_last_bidding_date: "4th Oct' 22",
+                }}
+              />
+            )}
+            {activeMenu === 3 && (
+              <Property_Details_Property_Features
+                property={{
+                  property_id: 1,
+                  property_name: "Winsdors farm land near ORR",
+                  property_location: "Outer ring road, Sarjapur, Bangalore",
+                  property_total_units: 100,
+                  property_total_area_plot: 10000,
+                  property_cost_per_unit: 1,
+                  property_min_tenure: "3 yrs",
+                  property_units_sold: 64,
+                  property_desc:
+                    "The newly constructed & platinum rated building is situated in the largest IT corridor of Bangalore. This is a rare opportunity to acquire an A+ grade asset with a blue chip tenant at an attractive. The newly constructed & platinum rated building is situated in the largest IT corridor of Bangalore. This is a rare opportunity to acquire an A+ grade asset with a blue chip tenant at an attractive",
+                  property_yield: "8%",
+                  property_last_bidding_date: "4th Oct' 22",
+                }}
+              />
+            )}
+            {activeMenu === 4 && (
+              <Property_Details_Property_Features
+                property={{
+                  property_id: 1,
+                  property_name: "Winsdors farm land near ORR",
+                  property_location: "Outer ring road, Sarjapur, Bangalore",
+                  property_total_units: 100,
+                  property_total_area_plot: 10000,
+                  property_cost_per_unit: 1,
+                  property_min_tenure: "3 yrs",
+                  property_units_sold: 64,
+                  property_desc:
+                    "The newly constructed & platinum rated building is situated in the largest IT corridor of Bangalore. This is a rare opportunity to acquire an A+ grade asset with a blue chip tenant at an attractive. The newly constructed & platinum rated building is situated in the largest IT corridor of Bangalore. This is a rare opportunity to acquire an A+ grade asset with a blue chip tenant at an attractive",
+                  property_yield: "8%",
+                  property_last_bidding_date: "4th Oct' 22",
+                }}
+              />
+            )}
+            {activeMenu === 5 && (
+              <Property_Details_Property_Features
+                property={{
+                  property_id: 1,
+                  property_name: "Winsdors farm land near ORR",
+                  property_location: "Outer ring road, Sarjapur, Bangalore",
+                  property_total_units: 100,
+                  property_total_area_plot: 10000,
+                  property_cost_per_unit: 1,
+                  property_min_tenure: "3 yrs",
+                  property_units_sold: 64,
+                  property_desc:
+                    "The newly constructed & platinum rated building is situated in the largest IT corridor of Bangalore. This is a rare opportunity to acquire an A+ grade asset with a blue chip tenant at an attractive. The newly constructed & platinum rated building is situated in the largest IT corridor of Bangalore. This is a rare opportunity to acquire an A+ grade asset with a blue chip tenant at an attractive",
+                  property_yield: "8%",
+                  property_last_bidding_date: "4th Oct' 22",
+                }}
+              />
+            )}
+            {activeMenu === 6 && (
+              <Property_Details_Property_Features
+                property={{
+                  property_id: 1,
+                  property_name: "Winsdors farm land near ORR",
+                  property_location: "Outer ring road, Sarjapur, Bangalore",
+                  property_total_units: 100,
+                  property_total_area_plot: 10000,
+                  property_cost_per_unit: 1,
+                  property_min_tenure: "3 yrs",
+                  property_units_sold: 64,
+                  property_desc:
+                    "The newly constructed & platinum rated building is situated in the largest IT corridor of Bangalore. This is a rare opportunity to acquire an A+ grade asset with a blue chip tenant at an attractive. The newly constructed & platinum rated building is situated in the largest IT corridor of Bangalore. This is a rare opportunity to acquire an A+ grade asset with a blue chip tenant at an attractive",
+                  property_yield: "8%",
+                  property_last_bidding_date: "4th Oct' 22",
+                }}
+              />
+            )}
+            {activeMenu === 7 && (
+              <Property_Details_Property_Features
+                property={{
+                  property_id: 1,
+                  property_name: "Winsdors farm land near ORR",
+                  property_location: "Outer ring road, Sarjapur, Bangalore",
+                  property_total_units: 100,
+                  property_total_area_plot: 10000,
+                  property_cost_per_unit: 1,
+                  property_min_tenure: "3 yrs",
+                  property_units_sold: 64,
+                  property_desc:
+                    "The newly constructed & platinum rated building is situated in the largest IT corridor of Bangalore. This is a rare opportunity to acquire an A+ grade asset with a blue chip tenant at an attractive. The newly constructed & platinum rated building is situated in the largest IT corridor of Bangalore. This is a rare opportunity to acquire an A+ grade asset with a blue chip tenant at an attractive",
+                  property_yield: "8%",
+                  property_last_bidding_date: "4th Oct' 22",
+                }}
+              />
+            )}
+            {activeMenu === 8 && (
+              <Property_Details_Property_Features
+                property={{
+                  property_id: 1,
+                  property_name: "Winsdors farm land near ORR",
+                  property_location: "Outer ring road, Sarjapur, Bangalore",
+                  property_total_units: 100,
+                  property_total_area_plot: 10000,
+                  property_cost_per_unit: 1,
+                  property_min_tenure: "3 yrs",
+                  property_units_sold: 64,
+                  property_desc:
+                    "The newly constructed & platinum rated building is situated in the largest IT corridor of Bangalore. This is a rare opportunity to acquire an A+ grade asset with a blue chip tenant at an attractive. The newly constructed & platinum rated building is situated in the largest IT corridor of Bangalore. This is a rare opportunity to acquire an A+ grade asset with a blue chip tenant at an attractive",
+                  property_yield: "8%",
+                  property_last_bidding_date: "4th Oct' 22",
+                }}
+              />
+            )}
+            {/* {activeMenu === 2 && <Property_Details_Holders />}
             {activeMenu === 3 && <Property_Details_About />}
             {activeMenu === 4 && <Property_Details_Locality />}
             {activeMenu === 5 && <Property_Details_Latest_Developments />}
             {activeMenu === 6 && <Property_Details_Charges />}
             {activeMenu === 7 && <Property_Details_Returns />}
-            {activeMenu === 8 && <Property_Details_FAQs />}
+            {activeMenu === 8 && <Property_Details_FAQs />} */}
           </div>
           <div className="single-property-action-bar">
             <div className="single-property-purchase-form">
@@ -80,6 +213,41 @@ const Single_Listing = () => {
                   id="single-property-form-price"
                   placeholder="Enter unit price"
                 />
+              </div>
+
+              <button className="single-property-form-cta">BUY NOW</button>
+              <button className="single-property-form-cta single-property-form-cta-whatsapp">
+                CONNECT VIA WHATSAPP
+              </button>
+            </div>
+
+            <div className="single-property-bids">
+              <div className="single-property-heading">
+                <h2>Ongoing Bids</h2>
+                <table className="bidding-table">
+                  <tbody>
+                    <tr>
+                      <td>₹1,00,000</td>
+                      <td>2 units</td>
+                      <td className="rejected">Rejected</td>
+                    </tr>
+                    <tr>
+                      <td>₹1,00,000</td>
+                      <td>2 units</td>
+                      <td className="accepted">Accepted</td>
+                    </tr>
+                    <tr>
+                      <td>₹1,00,000</td>
+                      <td>2 units</td>
+                      <td className="rejected">Rejected</td>
+                    </tr>
+                    <tr>
+                      <td>₹1,00,000</td>
+                      <td>2 units</td>
+                      <td className="accepted">Accepted</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
